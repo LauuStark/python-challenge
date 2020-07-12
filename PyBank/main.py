@@ -17,7 +17,6 @@ with open (csvpath,'r') as csvfile:
     
 
 
-#Print dataset to corroborate successful upload
     for row in csvreader:
         date = row[0]
         prf_loss = (row[1])
@@ -51,7 +50,7 @@ with open (csvpath,'r') as csvfile:
 #import to CSV
 
 myData = ["Financial Analysis","Total Months: " + str(count),"Total: $" + str(suma),"Average Change: $" + str(ave),"Greatest increase in profits: " + str(increase),"Greatest decrease in profits: " + str(decrease)]
-myFile = open("Analysis","results.csv","w")
+myFile = open("results.csv","w")
 
 with myFile:
     writer = csv.writer(myFile)
